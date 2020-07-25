@@ -1,0 +1,6 @@
+
+*.pyc
+
+sample_app/db.sqlite3
+
+*.sqlite3
