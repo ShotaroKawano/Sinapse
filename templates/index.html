@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="body">
+      <!-- ▼▼▼▼▼ header ▼▼▼▼▼ -->
+      <div id="header" class="box_header">
+        <a id="btn" class="name_service" href="login.html">Sinapse</a>
+        <input
+          type="search"
+          class="input_search"
+          placeholder="🔍キーワード、#ハッシュタグを入力..."
+        />
+        <div id="btn">
+          <img class="btn_headerUser" src="images/userimages/user00.jpg" alt="プロフィール画像">
+        </div>
+        <div class="btn_create">
+          <p>✏︎ 投稿</p>
+        </div>
+      </div>
+      <!-- ▲▲▲▲▲ header ▲▲▲▲▲ -->
+
+      <div class="center_lar" style="display: flex;">
+        <!-- ▼▼▼▼▼ boards ▼▼▼▼▼ -->
+        <div>
+          <!-- ▼▼▼ board1set ▼▼▼ -->
+          <div class="box_boards1set">
+            <!-- ▼▼ プロフボタン ▼▼ -->
+            <div class="box_boardsUser">
+              <div id="btn">
+                <img class="btn_boardsUser" src="images/userimages/user00.jpg" alt="プロフィール画像">
+              </div>
+              <div class="name_user">川野 翔太郎</div>
+              <div id="btn" class="box_boardsUsercontents">
+                <img class="icon_boardsUser" src="images/icons/icons_userlike.png" alt="いいねボタン">
+                <div>000</div>
+              </div>
+            </div>
+
+            <div class="box_indexBoards">
+              <!-- ▼▼ サムネ画像 ▼▼ -->
+              <div class="thumbnail_indexBoards">
+                <!-- <img class="thumbnail_indexBoards" src="images/treediagram.png" alt="樹形図"> -->
+              </div>
+
+              <!-- ▼▼ 概要 ▼▼ -->
+              <div style="margin: 10px 10px 20px 0px; max-width: 460px;">
+                <!-- ▼ タイトル ▼ -->
+                <div style="margin: 10px;">
+                  <h2 class="indexTitle">h2タイトル（最多何文字表示？）</h2>
+                  <h2 class="indexTitle">{% context.title %}</h2>
+                </div>
+                <!-- ▼ 見出し ▼ -->
+                <div  style="margin: 10px;">
+                  <p class="indexSubheading">1.1【Cardsの各h2タイトル】cardsの各説明文あああああ</p>
+
+                  <p class="indexSubheading">2.1【Cardsの各h2タイトル】cardsの各説明文あああああ</p>
+
+                  <p class="indexSubheading">2.2【Cardsの各h2タイトル】cardsの各説明文あああああ</p>
+
+                  <p class="indexSubheading">3.1【Cardsの各h2タイトル】cardsの各説明文あああああ</p>
+                </div>
+                <!-- ▼ ハッシュタグ ▼ -->
+                <div
+                  style="display: flex; flex-wrap: wrap; margin: 10px;"
+                >
+                  <div id="btn" class="box_hashtag">
+                    #NoSQL
+                  </div>
+                  <div id="btn" class="box_hashtag">
+                    #Firebase
+                  </div>
+                  <div id="btn" class="box_hashtag">
+                    #RDB
+                  </div>
+                  <div id="btn" class="box_hashtag">
+                    #AWS
+                  </div>
+                  <div id="btn" class="box_hashtag">
+                    #udemy
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ▼▼ SNS ▼▼ -->
+            <div class="box_indexSns">
+              <div id="btn" class="box_indexSnscontents">
+                <img class="icon_indexBoards" src="images/icons/icons_like.png" alt="いいねボタン">
+                <div>000</div>
+              </div>
+              </img>
+              <div id="btn" class="box_indexSnscontents">
+                <img class="icon_indexBoards" src="images/icons/icons_comment.png" alt="コメントボタン">
+                <div>000</div>
+              </div>
+              <div id="btn" class="box_indexSnscontents">
+                <img class="icon_indexBoards" src="images/icons/icons_share.png" alt="シェアボタン">
+                <div>000</div>
+              </div>
+            </div>
+          </div>
+          <!-- ▲▲▲ boards1set ▲▲▲ -->
+        </div>
+        <!-- ▲▲▲▲▲ boards ▲▲▲▲▲ -->
+      </div>
+    </div>
+  </body>
+</html>

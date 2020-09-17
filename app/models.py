@@ -5,11 +5,11 @@ from django.contrib.auth.models import User
 class Board(models.Model):
     title = models.CharField('タイトル', max_length=255)
     thumbnail = models.CharField('サムネイル', max_length=255)
-    # user =  models.ForeignKey(User, related_name=‘boards’, on_delete=models.CASCADE)
-    user = models.ManyToManyField(
-        User,
-        through="Like",
-    )
+    user = models.ForeignKey(User, related_name='boards', on_delete=models.CASCADE)
+    # user = models.ManyToManyField(
+    #     User,
+    #     through="Like",
+    # )
     created_date = models.DateTimeField('作成日時', auto_now_add=True)
     update_date = models.DateTimeField('更新日時', auto_now=True)
 
